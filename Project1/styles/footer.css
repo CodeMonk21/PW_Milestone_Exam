@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    --text-color:rgb(163 163 163);
+    --heading-margin:5px 0px;
+}
+.footer-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background-color: rgb(30 27 75);
+    color: #ffffff;
+    margin-top: 2rem;
+    padding: 3em ;
+}
+.explain-content{
+    width: 20em;
+}
+.explain-content h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin: var(--heading-margin);
+    text-transform: uppercase;
+}
+.explain-content p{
+    color: var(--text-color);
+    line-height: 1.5;
+}
+.product-container{
+    display: flex;
+    gap: 5rem;
+}
+.product-content{
+    /* border: 2px solid; */
+    width: 15em;
+}
+.product-content h4{
+    margin: var(--heading-margin);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+.product-content p{
+    margin: 10px 0px;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-right: 5px;
+    color: var(--text-color);
+}
+.product-img{
+    width: fit-content;
+    padding: 0.6em 1em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.teacher{
+    background-color: rgb(20 184 166);
+}
+.course{
+    background-color: rgb(234 88 12);
+}
+.support{
+    background-color: rgb(37 99 235);
+}
+
+@media screen and (max-width:1000px) {
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 3em;
+    }
+    .product-container{
+        flex-direction: column;
+        row-gap: 2em;
+        align-items: center;
+    }
+    .product-img{
+        margin: auto;
+    }
+    .product-content h4{
+        margin-top: 2em;
+    } 
+}
