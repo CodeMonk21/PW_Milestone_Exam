@@ -1,0 +1,40 @@
+.footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    padding: 5rem 10em;
+}
+.footer-container p{
+    width: 55%;
+    line-height: 1.2;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.footer-heading{
+    margin-bottom: 1em;
+    color: rgb(31 41 55);
+}
+.footer-text{
+    margin-bottom: 0.8em;
+    text-decoration: none;
+    color: rgb(107 114 128);
+    transition: all 0.2s ease-in-out;
+}
+.footer a:hover{
+    color: rgb(75 85 99);
+}
+.right-container{
+    background-color: rgba(243, 244, 246, 0.857);
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.right-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(107 114 128);
+}
